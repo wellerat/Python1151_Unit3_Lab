@@ -20,12 +20,15 @@ while run_program:
     choice = input("\nEnter your choice (1-5)  ")
 
     if choice == '1':
+        radius = (input("\nEnter radius of circle:  "))
     elif choice == '2':
-        
+        radius = (input("\nEnter radius of the circle:  "))
     elif choice == '3':
-        
+        width = (input("\nEnter width of rectangle:  "))
+        height = (input("\nEnter height of rectangle: "))
     elif choice == '4':
-        
+        width = (input("\nEnter width of rectangle:  "))
+        height = (input("\nEnter height of rectangle: "))
     elif choice == '5':
         print("\nGoodbye!")
         run_program=False 
