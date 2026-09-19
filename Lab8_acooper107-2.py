@@ -4,7 +4,7 @@
 """No started code"""
 """Sept. 17, 2026"""
 
-
+import circle as c
                     
 run_program = True
 
@@ -21,8 +21,12 @@ while run_program:
 
     if choice == '1':
         radius = (input("\nEnter radius of circle:  "))
+        area = c.calc_area(float(radius))
+        print(f"\nThe area of the circle is {area}")
     elif choice == '2':
         radius = (input("\nEnter radius of the circle:  "))
+        circumference = c.calc_circumference(float(radius))
+        print(f"\nThe circumference of the circle is {circumference}")
     elif choice == '3':
         width = (input("\nEnter width of rectangle:  "))
         height = (input("\nEnter height of rectangle: "))
