@@ -1,8 +1,18 @@
-"""Geometry Calculator"""
-"""Ann Cooper"""
-"""Calulates the area and perimeter/circumference of circles and rectangles"""
-"""No started code"""
-"""Sept. 17, 2026"""
+"""
+Circle Geometry Calculator
+
+Description:
+   Calculates the area and circumference of circles.
+   
+Author:   
+   Ann Cooper
+
+Starter Code: 
+   No starter code
+   
+Date:
+   Sept. 17, 2026
+"""
 
 import math
 
