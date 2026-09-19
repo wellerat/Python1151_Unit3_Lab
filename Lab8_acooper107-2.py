@@ -6,7 +6,18 @@
 
 import circle as c
 import rectangle as r
-                    
+
+def validate_value(value):
+        try:
+            number = float(value)
+        except ValueError:
+            return False
+
+        if float(value) < 0:
+            return False
+
+        return True
+                                        
 run_program = True
 
 while run_program:
@@ -25,23 +36,41 @@ while run_program:
 
     if choice == '1':
         radius = (input("\nEnter radius of circle:  "))
+        while not validate_value(radius):
+            print("Invalid data, try again")
+            radius = (input("\nEnter radius of circle:  "))
         area = c.calc_area(float(radius))
         result_message=f"\nThe area of the circle is {area}"
 
     elif choice == '2':
         radius = (input("\nEnter radius of the circle:  "))
+        while not validate_value(radius):
+            print("Invalid data, try again")
+            radius = (input("\nEnter radius of circle:  "))
         circumference = c.calc_circumference(float(radius))
         result_message=f"\nThe circumference of the circle is {circumference}"
 
     elif choice == '3':
         width = (input("\nEnter width of rectangle:  "))
+        while not validate_value(width):
+            print("Invalid data, try again")
+            width = (input("\nEnter width of rectangle:  "))
         height = (input("\nEnter height of rectangle: "))
+        while not validate_value(height):
+            print("Invalid data, try again")
+            height = (input("\nEnter height of rectangle: "))
         area = r.calc_area(float(width),float(height))
         result_message=f"\nThe area of the rectangle is {area}"
 
     elif choice == '4':
         width = (input("\nEnter width of rectangle:  "))
+        while not validate_value(width):
+            print("Invalid data, try again")
+            width = (input("\nEnter width of rectangle:  "))
         height = (input("\nEnter height of rectangle: "))
+        while not validate_value(height):
+            print("Invalid data, try again")
+            height = (input("\nEnter height of rectangle: "))
         perimeter = r.calc_perimeter(float(width),float(height))
         result_message=f"\nThe perimeter of the rectangle is {perimeter}"
 
