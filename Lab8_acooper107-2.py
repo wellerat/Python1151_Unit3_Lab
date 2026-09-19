@@ -5,6 +5,7 @@
 """Sept. 17, 2026"""
 
 import circle as c
+import rectangle as r
                     
 run_program = True
 
@@ -30,9 +31,13 @@ while run_program:
     elif choice == '3':
         width = (input("\nEnter width of rectangle:  "))
         height = (input("\nEnter height of rectangle: "))
+        area = r.calc_area(float(width),float(height))
+        print(f"\nThe area of the rectangle is {area}")
     elif choice == '4':
         width = (input("\nEnter width of rectangle:  "))
         height = (input("\nEnter height of rectangle: "))
+        perimeter = r.calc_perimeter(float(width),float(height))
+        print(f"\nThe perimeter of the rectangle is {perimeter}")
     elif choice == '5':
         print("\nGoodbye!")
         run_program=False 
